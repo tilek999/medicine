@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ol>
+            {% block nav %}
+            <div>
+                <a href="http://192.168.0.105:5001/">homepage</a>
+                <a href="http://192.168.0.105:5001/list">list</a>
+                <a href="http://192.168.0.105:5001/recomendetion">recomendetion</a>
+            </div>
+            {% endblock %}
+            {% block content %}
+            <h1>welcome to pharmacy</h1>
+            
+            {% endblock %}
+        </ol>
+    </div>
+</body>
+</html>
